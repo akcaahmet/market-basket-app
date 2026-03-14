@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    tools:context=".ui.ForgotFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="275dp"
+            android:src="@drawable/forgot" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Don't Worry it happens. Please Enter an email or Mobile associated with your account"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            style="@style/DigitsOnly"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="Email ID or Mobile" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/DigitsOnly"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="New Password" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <EditText
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/DigitsOnly"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="Confirm Password" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#64FCD9"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
